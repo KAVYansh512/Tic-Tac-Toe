@@ -50,6 +50,9 @@ boxes.forEach((box) =>{
 
 
 let showWinner = (pos1) => {
+    boxes.forEach((box) => {
+        box.disabled= true;
+    })
     msg.innerText= `Congatulations, Winner is ${pos1}`;
     result.classList.remove("hide");
 }
